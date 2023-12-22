@@ -4,6 +4,22 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
-		// Put your code here	
+		int Min = Integer.parseInt (args[0]);	
+		int Max = Integer.parseInt (args[1]);	
+		double rand = Math.random (); // 0-1 
+		int random1 = (int)(Math.random() * (Max - Min + 1) + Min);
+		int random2 = (int)(Math.random() * (Max - Min + 1) + Min);
+		int random3 = (int)(Math.random() * (Max - Min + 1) + Min);
+			System.out.println(random1);
+			System.out.println(random2);
+			System.out.println(random3);
+
+		if ((random1 < random2) & (random1 < random3)) {
+			System.out.println("The minimal generated number was " + random1);
+		} else if ((random2 < random1) & (random2 < random3)) {
+			System.out.println("The minimal generated number was " + random2);
+		} else {
+			System.out.println("The minimal generated number was " + random3);
+		}
 	}
 }
