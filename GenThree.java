@@ -6,7 +6,6 @@ public class GenThree {
 	public static void main(String[] args) {
 		int Min = Integer.parseInt (args[0]);	
 		int Max = Integer.parseInt (args[1]);	
-		double rand = Math.random (); // 0-1 
 		int random1 = (int)(Math.random() * (Max - Min) + Min);
 		int random2 = (int)(Math.random() * (Max - Min) + Min);
 		int random3 = (int)(Math.random() * (Max - Min) + Min);
