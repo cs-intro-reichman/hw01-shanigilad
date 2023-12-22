@@ -14,9 +14,9 @@ public class GenThree {
 			System.out.println(random2);
 			System.out.println(random3);
 
-		if ((random1 < random2) && (random1 < random3)) {
+		if ((random1 < random2) & (random1 < random3)) {
 			System.out.println("The minimal generated number was " + random1);
-		} else if ((random2 < random1) && (random2 < random3)) {
+		} else if ((random2 < random1) & (random2 < random3)) {
 			System.out.println("The minimal generated number was " + random2);
 		} else {
 			System.out.println("The minimal generated number was " + random3);
